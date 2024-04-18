@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240418154949">
+    <title>Главная</title>
+</head>
+
+<body>
+    <header class="header">
+
+    <!-- Top menu -->
+    <div class="header__top">
+        <div class="wrap header__wrap">
+            <ul class="header__top_menu">
+                <li><a href="">Про компанію</a></li>
+                <li><a href="">Оплата та доставка</a></li>
+                <li><a href="">Кредитування</a></li>
+                <li><a href="">Гарантія</a></li>
+                <li><a href="">Контакти</a></li>
+            </ul>
+            <!-- *SVG -->
+
+            <svg dispay="none" width="0px" height="0px">
+                <symbol viewBox="0 0 22 22" id="account">
+                    <g>
+                        <path
+                            d="M9.03853 10.5975C10.4944 10.5975 11.7551 10.0753 12.7852 9.04502C13.8153 8.01497 14.3374 6.75462 14.3374 5.29858C14.3374 3.84298 13.8153 2.5825 12.785 1.55207C11.7547 0.522154 10.4942 0 9.03853 0C7.58246 0 6.32206 0.522154 5.29201 1.55224C4.26197 2.58233 3.7396 3.84285 3.7396 5.29858C3.7396 6.75462 4.26193 8.01514 5.29219 9.04523C6.32244 10.0751 7.58297 10.5975 9.03853 10.5975ZM18.3102 16.9169C18.2804 16.4882 18.2204 16.0205 18.1319 15.5268C18.0426 15.0292 17.9277 14.559 17.79 14.1291C17.6478 13.6848 17.4545 13.2461 17.2155 12.8256C16.9674 12.3892 16.676 12.0092 16.349 11.6965C16.0071 11.3694 15.5885 11.1064 15.1044 10.9145C14.6221 10.7237 14.0875 10.627 13.5156 10.627C13.291 10.627 13.0739 10.7192 12.6544 10.9923C12.3563 11.1864 12.0572 11.3792 11.7573 11.5706C11.4691 11.7543 11.0787 11.9263 10.5964 12.0821C10.126 12.2343 9.6483 12.3115 9.1768 12.3115C8.70535 12.3115 8.2278 12.2343 7.75682 12.0821C7.27514 11.9264 6.88473 11.7544 6.59684 11.5708C6.26298 11.3575 5.96091 11.1628 5.69888 10.9921C5.27994 10.719 5.06256 10.6268 4.83801 10.6268C4.26597 10.6268 3.73157 10.7237 3.24933 10.9147C2.76559 11.1062 2.34682 11.3692 2.00457 11.6967C1.6778 12.0095 1.38626 12.3893 1.1385 12.8256C0.89968 13.2461 0.706322 13.6846 0.563967 14.1293C0.426467 14.5591 0.311526 15.0292 0.222238 15.5268C0.133765 16.0199 0.0736951 16.4877 0.0439609 16.9174C0.0143822 17.3498 -0.000278787 17.7831 4.01387e-06 18.2165C4.01387e-06 19.3649 0.365065 20.2946 1.08496 20.9802C1.79596 21.6569 2.73672 22.0001 3.88075 22.0001H14.4739C15.6179 22.0001 16.5583 21.657 17.2695 20.9803C17.9896 20.2951 18.3546 19.3653 18.3546 18.2163C18.3545 17.7731 18.3396 17.3358 18.3102 16.9169Z">
+                        </path>
+                    </g>
+                </symbol>
+
+                <symbol viewBox="0 0 26 26" id="search">
+                    <g>
+                        <path
+                            d="M3.08485 18.0048C-1.02848 13.8914 -1.02839 7.19835 3.08485 3.08494C7.19827 -1.02848 13.8912 -1.02848 18.0046 3.08494C21.4942 6.57461 22.0228 11.7646 19.5915 15.8175C19.5915 15.8175 19.4169 16.1105 19.6528 16.3462L25.0353 21.7287C26.1066 22.7999 26.3616 24.2979 25.4116 25.2482L25.248 25.4116C24.2979 26.3618 22.7999 26.1069 21.7286 25.0355L16.3574 19.6643C16.1102 19.4171 15.8173 19.5918 15.8173 19.5918C11.7646 22.0229 6.57452 21.4945 3.08485 18.0048ZM16.0569 16.057C19.0963 13.0177 19.0962 8.07228 16.0568 5.03289C13.0174 1.99358 8.07203 1.99349 5.03272 5.03289C1.99333 8.07219 1.99333 13.0177 5.03272 16.057C8.07211 19.0963 13.0174 19.0963 16.0569 16.057Z">
+                        </path>
+                        <path
+                            d="M15.3837 9.91883C15.5252 9.91883 15.669 9.89102 15.8076 9.83248C16.3613 9.59812 16.6204 8.95922 16.3861 8.40542C14.9131 4.92454 10.8829 3.29102 7.40214 4.76397C6.84842 4.99833 6.58936 5.63723 6.82372 6.19103C7.05815 6.74484 7.69689 7.00373 8.25086 6.76946C10.6257 5.76454 13.3756 6.8791 14.3805 9.25396C14.5563 9.66932 14.9595 9.91883 15.3837 9.91883Z">
+                        </path>
+                    </g>
+                </symbol>
+
+                <symbol viewBox="0 0 22 22" id="wishlist">
+                    <path
+                        d="M17.4166 12.8333C18.7824 11.495 20.1666 9.89083 20.1666 7.79167C20.1666 6.45453 19.6354 5.17217 18.6899 4.22667C17.7444 3.28117 16.4621 2.75 15.1249 2.75C13.5116 2.75 12.3749 3.20833 10.9999 4.58333C9.62492 3.20833 8.48825 2.75 6.87492 2.75C5.53779 2.75 4.25542 3.28117 3.30992 4.22667C2.36443 5.17217 1.83325 6.45453 1.83325 7.79167C1.83325 9.9 3.20825 11.5042 4.58325 12.8333L10.9999 19.25L17.4166 12.8333Z">
+                    </path>
+                </symbol>
+
+                <symbol viewBox="0 0 29 30" id="compare">
+                    <g>
+                        <path
+                            d="M28.9999 13.5585L24.8973 1.95852C24.8632 1.85617 24.8035 1.77088 24.7437 1.68558C24.7267 1.66852 24.7096 1.65999 24.6926 1.63441C24.6377 1.57689 24.5744 1.528 24.5049 1.48941C24.4771 1.46856 24.4451 1.454 24.4111 1.44676C24.3447 1.41296 24.2722 1.39266 24.1979 1.38705C24.1637 1.37852 24.1382 1.36999 24.0955 1.36999C24.0785 1.36147 24.0614 1.35294 24.0443 1.35294C23.9505 1.35294 23.8737 1.36999 23.797 1.38705H23.7714L23.7629 1.39558L16.8285 3.53647C16.583 3.14751 16.2431 2.827 15.8405 2.60478C15.4378 2.38256 14.9854 2.26588 14.5255 2.26558C13.8023 2.26783 13.1094 2.55612 12.598 3.06749C12.0866 3.57887 11.7983 4.2718 11.7961 4.99499C11.7961 5.02911 11.8046 5.07176 11.8046 5.10588L4.64845 7.77558C4.63139 7.78411 4.62286 7.80117 4.59728 7.8097C4.52051 7.85235 4.44375 7.88647 4.38404 7.93764C4.35845 7.96323 4.33286 7.98882 4.30728 8.02294C4.2561 8.07411 4.22198 8.13382 4.17933 8.19352C4.16228 8.22764 4.14522 8.26176 4.12816 8.28735C4.12816 8.30441 4.1111 8.31294 4.1111 8.32999L-7.75494e-05 20.1262C-0.0256658 20.22 -0.0341952 20.3053 -0.0427246 20.3991V20.4247C-0.0427246 23.0944 2.20051 25.2609 4.97257 25.2609C7.7361 25.2609 9.99639 23.0859 9.99639 20.4247C9.99639 20.4162 9.98786 20.4076 9.98786 20.3991C9.98786 20.3053 9.97933 20.22 9.94522 20.1262L6.12404 9.16588L12.4955 6.78617C12.8026 7.14441 13.1864 7.40882 13.6214 7.56235V26.8303H7.24992C6.74669 26.8303 6.33728 27.2397 6.33728 27.7429C6.33728 28.2376 6.74669 28.6471 7.24992 28.6471H21.8096C22.3214 28.6471 22.7223 28.2376 22.7223 27.7344C22.7223 27.2312 22.3214 26.8218 21.8096 26.8218H15.4382V7.55382C15.914 7.38315 16.3333 7.08399 16.6495 6.68952C16.9656 6.29506 17.1664 5.82071 17.2293 5.31911L22.5773 3.66441L19.0802 13.5671C19.0546 13.6523 19.0376 13.7462 19.0376 13.84C19.0376 13.8485 19.029 13.8571 19.029 13.8656C19.029 16.4926 21.2723 18.6421 24.0443 18.6421C26.7993 18.6421 29.0511 16.4926 29.0511 13.8656V13.84C29.0431 13.7447 29.026 13.6505 28.9999 13.5585ZM7.79581 19.5121H2.1408L4.96404 11.4006L7.79581 19.5121ZM21.2296 12.9529L24.0443 4.99499L26.859 12.9529H21.2296Z">
+                        </path>
+                    </g>
+                </symbol>
+
+                <symbol viewBox="0 0 32 28" id="cart">
+                    <g>
+                        <path
+                            d="M9 2.8125C9 1.26169 7.73825 0 6.1875 0H0.4375C-0.0808125 0 -0.5 0.419375 -0.5 0.9375C-0.5 1.45563 -0.0808125 1.875 0.4375 1.875H6.1875C6.70481 1.875 7.125 2.29519 7.13037 2.916L8.91212 18.95C7.86812 19.3613 7.125 20.3744 7.125 21.5625C7.125 23.1133 8.3865 24.3743 9.9375 24.3743H11.0476C10.9426 24.6689 10.875 24.9822 10.875 25.3125C10.875 26.8633 12.1365 28.125 13.6875 28.125C15.2383 28.125 16.5 26.8633 16.5 25.3125C16.5 24.9822 16.4324 24.6689 16.3271 24.3743H22.2976C22.1926 24.6689 22.125 24.9822 22.125 25.3125C22.125 26.8633 23.3865 28.125 24.9375 28.125C26.4883 28.125 27.75 26.8633 27.75 25.3125C27.75 23.7615 26.4883 22.5 24.9375 22.5H9.9375C9.42019 22.5 9 22.0796 9 21.5625C9 21.0452 9.42019 20.625 9.9375 20.625H27.0989C28.4804 20.625 29.647 19.6362 29.8731 18.2747L31.4871 8.59131C31.5327 8.31931 31.4561 8.04194 31.2773 7.83131C31.1895 7.7274 31.08 7.64391 30.9565 7.58669C30.833 7.52947 30.6986 7.49988 30.5625 7.5H9.52269L9 2.8125ZM24 12.1875C24 11.6692 24.4192 11.25 24.9375 11.25C25.4556 11.25 25.875 11.6692 25.875 12.1875V15.9375C25.875 16.4556 25.4556 16.875 24.9375 16.875C24.4192 16.875 24 16.4556 24 15.9375V12.1875ZM18.375 12.1875C18.375 11.6692 18.7942 11.25 19.3125 11.25C19.8306 11.25 20.25 11.6692 20.25 12.1875V15.9375C20.25 16.4556 19.8306 16.875 19.3125 16.875C18.7942 16.875 18.375 16.4556 18.375 15.9375V12.1875ZM12.75 12.1875C12.75 11.6692 13.1692 11.25 13.6875 11.25C14.2056 11.25 14.625 11.6692 14.625 12.1875V15.9375C14.625 16.4556 14.2056 16.875 13.6875 16.875C13.1692 16.875 12.75 16.4556 12.75 15.9375V12.1875Z">
+                        </path>
+                        <path
+                            d="M28.6875 0H21.1875C20.6692 0 20.25 0.419375 20.25 0.9375V5.625H29.625V0.9375C29.625 0.419375 29.2056 0 28.6875 0ZM13.6875 1.875C13.1692 1.875 12.75 2.29419 12.75 2.8125V5.625H18.375V1.875H13.6875Z">
+                        </path>
+                    </g>
+                </symbol>
+
+                <symbol viewBox="0 0 32 32" id="burger">
+                    <path
+                        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+                </symbol>
+            </svg>
+
+
+
+            <!-- !SVG -->
+
+            <a href="" class="header__account">
+                <svg>
+                    <use class="header__account_svg" xlink:href="#account"></use>
+                </svg>
+                Мій акаунт
+            </a>
+            <div class="header__top_leng">
+                <a href="" class="leng_btn_1">UA</a>
+                <a href="" class="leng_btn_2">RU</a>
+            </div>
+        </div>
+    </div>
+    <div class="header__wrap wrap_bot">
+        <!-- Header -->
+        <div class="header__bot">
+            <a href="" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.webp" alt="logo"></picture></a>
+            <ul class="header__menu">
+                <li id="clo_btn">X</li>
+                <li><a href="">Бойлери</a></li>
+                <li><a href="">Проточні водонагрівачі</a></li>
+                <li><a href="">Теплоакумулятори</a></li>
+                <li><a href="">ТЕНи</a></li>
+                <li><a href="">Аксесуари</a></li>
+                <!-- только в мобильной версии -->
+                <li class="header__menu_mobail"><a href="">Про компанію</a></li>
+                <li class="header__menu_mobail"><a href="">Оплата та доставка</a></li>
+                <li class="header__menu_mobail"><a href="">Кредитування</a></li>
+                <li class="header__menu_mobail"><a href="">Гарантія</a></li>
+                <li class="header__menu_mobail"><a href="">Контакти</a></li>
+            </ul>
+            <ul class="header__icons">
+                <li id="open_btn">
+                    <svg>
+                        <use class="header__icons_svg header__icons_mobail" xlink:href="#burger"></use>
+                    </svg>
+                </li>
+                <li><a href="">
+                        <svg>
+                            <use class="header__icons_svg" xlink:href="#search"></use>
+                        </svg>
+                    </a></li>
+                <li><a href="">
+                        <svg>
+                            <use class="header__icons_svg" xlink:href="#wishlist"></use>
+                        </svg>
+                    </a></li>
+                <li><a href="">
+                        <svg>
+                            <use class="header__icons_svg" xlink:href="#compare"></use>
+                        </svg>
+                    </a></li>
+                <li><a href="">
+                        <svg>
+                            <use class="header__icons_svg" xlink:href="#cart"></use>
+                        </svg>
+                    </a></li>
+                <li id="mobail_svg"><a href="">
+                        <svg>
+                            <use class="header__icons_svg header__icons_mobail" xlink:href="#account"></use>
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+</header>
+    <main class="main">
+        <!-- Первый блок главной страницы -->
+        <div class="main__top-blok">
+            <div class="wrap main__wrap">
+                <h1 data-aos="fade-right" data-aos-duration="1500" class="main__heading">
+                    Товари Drazice для комфорту у вас вдома</h1>
+                <div class="main__top-blok_right">
+                    <img data-aos="fade-left" data-aos-duration="2000" src="img/top_img.webp" alt="Бойлер"
+                        class="main__top-img">
+                    <h2 data-aos="zoom-in" data-aos-duration="2000">Чеська якість за доступною ціною</h2>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1500" class="main__ani-bg">
+                <div data-aos="fade-left" data-aos-duration="2000" class="main__ani-bg_red">
+                </div>
+            </div>
+        </div>
+        <!-- Категория товаров -->
+        <div class="wrap">
+            <div class="main__product-cat">
+                <h3 class="main__heading-h3">Категорії наших товарів</h3>
+                <ul class="main__product-ul">
+                    <li>
+                        <a href="">
+                            <div class="img-cont"><picture><source srcset="img/prod/cat-1.webp" type="image/webp"><img src="img/prod/cat-1.webp" alt=""></picture></div>
+                            <p>Бойлери</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img-cont"><picture><source srcset="img/prod/cat-2.webp" type="image/webp"><img src="img/prod/cat-2.webp" alt=""></picture></div>
+                            <p>Проточні водонагрівачі</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img-cont"><picture><source srcset="img/prod/cat-3.webp" type="image/webp"><img src="img/prod/cat-3.webp" alt=""></picture></div>
+                            <p>Теплоакумулятори</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img-cont"><picture><source srcset="img/prod/cat-4.webp" type="image/webp"><img src="img/prod/cat-4.webp" alt=""></picture></div>
+                            <p>ТЕНи</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img-cont"><picture><source srcset="img/prod/cat-5.webp" type="image/webp"><img src="img/prod/cat-5.webp" alt=""></picture></div>
+                            <p>Аксесуари</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Хиты продаж -->
+            <div class="main__hit-slider">
+                <h3 class="main__heading-h3">Категорії наших товарів</h3>
+                <div class="main__prod-slider prod-slider">
+                    <a href="" class="prod-slider__element">
+                        <div class="img-cont prod-slider__img"><img data-lazy="img/prod/cat-5.webp" alt=""></div>
+                        <p class="prod-slider__name">Бойлер непрямого нагріву Drazice OKH 125 NTR/HV</p>
+                        <p class="prod-slider__cat">Бойлеры</p>
+                        <p class="prod-slider__price">33000грн</p>
+                        <button class="prod-slider__btn">Додати в кошик</button>
+                    </a>
+                    <a href="" class="prod-slider__element">
+                        <div class="img-cont prod-slider__img"><img data-lazy="img/prod/cat-3.webp" alt=""></div>
+                        <p class="prod-slider__name">Бойлер непрямого нагріву Drazice OKH 125 NTR/HV</p>
+                        <p class="prod-slider__cat">Бойлеры</p>
+                        <p class="prod-slider__price">33000грн</p>
+                        <button class="prod-slider__btn">Додати в кошик</button>
+                    </a>
+                    <a href="" class="prod-slider__element">
+                        <div class="img-cont prod-slider__img"><img data-lazy="img/prod/cat-1.webp" alt=""></div>
+                        <p class="prod-slider__name">Бойлер непрямого нагріву Drazice OKH 125 NTR/HV</p>
+                        <p class="prod-slider__cat">Бойлеры</p>
+                        <p class="prod-slider__price">33000грн</p>
+                        <button class="prod-slider__btn">Додати в кошик</button>
+                    </a>
+                    <a href="" class="prod-slider__element">
+                        <div class="img-cont prod-slider__img"><img data-lazy="img/prod/cat-2.webp" alt=""></div>
+                        <p class="prod-slider__name">Бойлер непрямого нагріву Drazice OKH 125 NTR/HV</p>
+                        <p class="prod-slider__cat">Бойлеры</p>
+                        <p class="prod-slider__price">33000грн</p>
+                        <button class="prod-slider__btn">Додати в кошик</button>
+                    </a>
+                    <a href="" class="prod-slider__element">
+                        <div class="img-cont prod-slider__img"><img data-lazy="img/prod/cat-3.webp" alt=""></div>
+                        <p class="prod-slider__name">Бойлер непрямого нагріву Drazice OKH 125 NTR/HV</p>
+                        <p class="prod-slider__cat">Бойлеры</p>
+                        <p class="prod-slider__price">33000грн</p>
+                        <button class="prod-slider__btn">Додати в кошик</button>
+                    </a>
+                    <a href="" class="prod-slider__element">
+                        <div class="img-cont prod-slider__img"><img data-lazy="img/prod/cat-4.webp" alt=""></div>
+                        <p class="prod-slider__name">Бойлер непрямого нагріву Drazice OKH 125 NTR/HV</p>
+                        <p class="prod-slider__cat">Бойлеры</p>
+                        <p class="prod-slider__price">33000грн</p>
+                        <button class="prod-slider__btn">Додати в кошик</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Хиты продаж -->
+            <div class="main__hit-slider">
+                <h3 class="main__heading-h3">Категорії наших товарів</h3>
+                <div class="main__prod-slider prod-slider">
+                    <a href="" class="prod-slider__element">
+                        <div class="img-cont prod-slider__img"><img data-lazy="img/prod/cat-5.webp" alt=""></div>
+                        <p class="prod-slider__name">Бойлер непрямого нагріву Drazice OKH 125 NTR/HV</p>
+                        <p class="prod-slider__cat">Бойлеры</p>
+                        <p class="prod-slider__price">33000грн</p>
+                        <button class="prod-slider__btn">Додати в кошик</button>
+                    </a>
+                    <a href="" class="prod-slider__element">
+                        <div class="img-cont prod-slider__img"><img data-lazy="img/prod/cat-3.webp" alt=""></div>
+                        <p class="prod-slider__name">Бойлер непрямого нагріву Drazice OKH 125 NTR/HV</p>
+                        <p class="prod-slider__cat">Бойлеры</p>
+                        <p class="prod-slider__price">33000грн</p>
+                        <button class="prod-slider__btn">Додати в кошик</button>
+                    </a>
+                    <a href="" class="prod-slider__element">
+                        <div class="img-cont prod-slider__img"><img data-lazy="img/prod/cat-1.webp" alt=""></div>
+                        <p class="prod-slider__name">Бойлер непрямого нагріву Drazice OKH 125 NTR/HV</p>
+                        <p class="prod-slider__cat">Бойлеры</p>
+                        <p class="prod-slider__price">33000грн</p>
+                        <button class="prod-slider__btn">Додати в кошик</button>
+                    </a>
+                    <a href="" class="prod-slider__element">
+                        <div class="img-cont prod-slider__img"><img data-lazy="img/prod/cat-2.webp" alt=""></div>
+                        <p class="prod-slider__name">Бойлер непрямого нагріву Drazice OKH 125 NTR/HV</p>
+                        <p class="prod-slider__cat">Бойлеры</p>
+                        <p class="prod-slider__price">33000грн</p>
+                        <button class="prod-slider__btn">Додати в кошик</button>
+                    </a>
+                    <a href="" class="prod-slider__element">
+                        <div class="img-cont prod-slider__img"><img data-lazy="img/prod/cat-3.webp" alt=""></div>
+                        <p class="prod-slider__name">Бойлер непрямого нагріву Drazice OKH 125 NTR/HV</p>
+                        <p class="prod-slider__cat">Бойлеры</p>
+                        <p class="prod-slider__price">33000грн</p>
+                        <button class="prod-slider__btn">Додати в кошик</button>
+                    </a>
+                    <a href="" class="prod-slider__element">
+                        <div class="img-cont prod-slider__img"><img data-lazy="img/prod/cat-4.webp" alt=""></div>
+                        <p class="prod-slider__name">Бойлер непрямого нагріву Drazice OKH 125 NTR/HV</p>
+                        <p class="prod-slider__cat">Бойлеры</p>
+                        <p class="prod-slider__price">33000грн</p>
+                        <button class="prod-slider__btn">Додати в кошик</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Обратная связь -->
+
+        <div class="forms main__forms">
+            <div class="wrap forms__wrap">
+                <div class="forms__text">
+                    <h3 class="forms__heading">Потрібна допомога фахівців
+                        при виборі обладнання?</h3>
+                    <p class="forms__p">Замовте безкоштовну консультацію
+                    </p>
+                </div>
+                <form action="" class="forms__form">
+                    <label for="">Ваше ім’я <span>*</span></label>
+                    <input type="text">
+                    <label for="">Номер телефону <span>*</span></label>
+                    <input type="text">
+                    <button type="submit">Замовити консультацію</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+    <div class="wrap footer__wrap">
+        <div class="footer__box">
+            <h3 class="footer__h3">Графік роботи</h3>
+            <p class="footer__p">Пн. - Пт. - 09:00-20:00</p>
+            <p class="footer__p">Сб. - Нд. - 10:00-17:00</p>
+
+            <!-- *SCG -->
+
+            <svg dispay="none" width="0px" height="0px">
+                <symbol viewBox="0 0 86 86" id="footer_fon">
+                    <g>
+                        <path
+                            d="M83.6593 63.1153L71.6578 51.1138C67.3715 46.8275 60.0849 48.5422 58.3704 54.1142C57.0845 57.972 52.7982 60.1151 48.9406 59.2577C40.368 57.1146 28.7951 45.9702 26.6519 36.9691C25.3661 33.1113 27.9378 28.825 31.7955 27.5393C37.3676 25.8248 39.0821 18.5381 34.7959 14.2518L22.7943 2.25029C19.3653 -0.750097 14.2218 -0.750097 11.2214 2.25029L3.07746 10.3942C-5.06645 18.9667 3.93472 41.684 24.0802 61.8294C44.2257 81.9749 66.9429 91.4049 75.5154 82.8322L83.6593 74.6883C86.6599 71.2592 86.6599 66.1157 83.6593 63.1153Z">
+                        </path>
+
+                    </g>
+
+                </symbol>
+            </svg>
+
+            <!-- !SVG -->
+
+            <ul class="footer__contact">
+                <li><a href="">
+                        <svg>
+                            <use class="footer__svg" xlink:href="#footer_fon"></use>
+                        </svg>
+                        (067) 141-22-11</a></li>
+                <li><a href="">
+                        <svg>
+                            <use class="footer__svg" xlink:href="#footer_fon"></use>
+                        </svg>
+                        (066) 141-22-11</a></li>
+                <li><a href="">
+                        <svg>
+                            <use class="footer__svg" xlink:href="#footer_fon"></use>
+                        </svg>
+                        (063) 141-22-11</a></li>
+            </ul>
+        </div>
+
+        <ul class="footer_cont">
+            <li><a href="">Бойлери</a></li>
+            <li><a href="">Теплоакумулятори</a></li>
+            <li><a href="">Проточні водонагрівачі</a></li>
+            <li><a href="">ТЕНи</a></li>
+            <li><a href="">Аксесуари</a></li>
+            <li><a href="">Про компанію</a></li>
+            <li><a href="">Оплата та доставка</a></li>
+            <li><a href="">Кредитування</a></li>
+            <li><a href="">Гарантія</a></li>
+            <li><a href="">Контакти</a></li>
+            <li><a href="">Корзина</a></li>
+            <li><a href="">Особистий кабінет</a></li>
+            <li><a href="">Мої бажання</a></li>
+            <li><a href="">Політика конфіденційності</a></li>
+            <li><a href="">Договір публічної оферти</a></li>
+        </ul>
+    </div>
+</footer>
+    <script src="js/app.min.js?_v=20240418154949"></script>
+    <!-- Инициализация AOS.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20240418154949"></script>
+    <script>
+        AOS.init();
+
+        // slider
+        $(document).ready(function () {
+            $('.prod-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: false,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            slidesToShow: 3,
+
+                        }
+                    }, {
+                        breakpoint: 500,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    }, {
+                        breakpoint: 350,
+                        settings: {
+                            slidesToShow: 1,
+                            centermode: true,
+                        }
+                    }
+                ],
+            });
+        });
+    </script>
+</body>
+
+</html>
